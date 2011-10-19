@@ -36,6 +36,23 @@
  }
 }
 document.getElementsByTagName("button")[0].onclick = YFT.click;
+
+
+//check whether there are two ints sum to a given number
+function check2sum(a,sum){
+var map = {};
+for(var i =0;i<a.length;i++){
+var diff = sum - a[i];
+map[a[i]] = diff;
+if(map[diff]){
+console.log("found: "+a[i]+" : "+diff);
+}
+}
+}
+
+var aa = [1,9,7,8,5,6,3,4,2];
+
+check2sum(aa,15);
 </script>
 </body>
 </html>
